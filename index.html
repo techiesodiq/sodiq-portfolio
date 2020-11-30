@@ -11,8 +11,19 @@
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="./css/all.min.css">
 
+    <!-- Magnific-Popup CSS file -->
+    <link rel="stylesheet" href="./vendor/Magnific-Popup/dist/magnific-popup.css">
+
+    <!-- Owl Carousel CSS File -->
+    <link rel="stylesheet" href="./vendor/Owl Carousel/CSS/owl.carousel.min.css">
+    <link rel="stylesheet" href="./vendor/Owl Carousel/CSS/owl.theme.default.min.css">
+
     <!-- Custom CSS File -->
     <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Reponsive CSS File -->
+    <link rel="stylesheet" href="./css/responsive.css">
+
 </head>
 <body>
     
@@ -263,17 +274,17 @@
                     <h1 class="text-uppercase title-h1">Quality Work</h1>
                 </div>
                 <div class="button-group">
-                    <button type="button" class="active">All</button>
+                    <button type="button" class="active" id="btn1" data-filter="*">All</button>
                     <button type="button" data-filter=".popular">Popular</button>
-                    <button type="button" data-filter="latest">Latest</button>
-                    <button type="button">Following</button>
-                    <button type="button">Upcoming</button>
+                    <button type="button" data-filter=".latest">Latest</button>
+                    <button type="button" data-filter=".following">Following</button>
+                    <button type="button" data-filter=".upcoming">Upcoming</button>
                 </div>
                 <div class="row grid">
                     <div class="col-lg-4 col-md-6 col-sm-12 element-item latest">
                         <div class="our-project">
                             <div class="img">
-                                <img src="./img/portfolio/p1.jpg" alt="portfolio-1">
+                              <a class="test-popup-link" href="./img/portfolio/p1.jpg"><img src="./img/portfolio/p1.jpg" alt="portfolio-1"></a>  
                             </div>
                             <div class="title py-4">
                                 <h4 class="text-uppercase">Minimal Design</h4>
@@ -281,10 +292,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item Popular">
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item popular">
                         <div class="our-project">
                             <div class="img">
-                                <img src="./img/portfolio/p2.jpg" alt="portfolio-2">
+                                <a class="test-popup-link" href="./img/portfolio/p2.jpg"><img src="./img/portfolio/p2.jpg" alt="portfolio-2"></a>
                             </div>
                             <div class="title py-4">
                                 <h4 class="text-uppercase">Paint Wall</h4>
@@ -292,10 +303,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item Popular">
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item popular">
                         <div class="our-project">
                             <div class="img">
-                                <img src="./img/portfolio/p3.jpg" alt="portfolio-3">
+                                <a class="test-popup-link" href="./img/portfolio/p3.jpg"><img src="./img/portfolio/p3.jpg" alt="portfolio-3"></a>
                             </div>
                             <div class="title py-4">
                                 <h4 class="text-uppercase">Female light</h4>
@@ -303,26 +314,226 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item Popular">
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item upcoming">
                         <div class="our-project">
                             <div class="img">
-                                <img src="./img/portfolio/p2.jpg" alt="portfolio-2">
+                                <a class="test-popup-link" href="./img/portfolio/p4.jpg"><img src="./img/portfolio/p4.jpg" alt="portfolio-4"></a>
                             </div>
                             <div class="title py-4">
-                                <h4 class="text-uppercase">Paint Wall</h4>
-                                <span class="text-secondary">Popular, Portfolio</span>
+                                <h4 class="text-uppercase">Fourth Air</h4>
+                                <span class="text-secondary">Upcoming, Portfolio</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item upcoming">
+                        <div class="our-project">
+                            <div class="img">
+                                <a class="test-popup-link" href="./img/portfolio/p5.jpg"><img src="./img/portfolio/p5.jpg" alt="portfolio-5"></a>
+                            </div>
+                            <div class="title py-4">
+                                <h4 class="text-uppercase">Multiple Fown</h4>
+                                <span class="text-secondary">Upcoming, Portfolio</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item following">
+                        <div class="our-project">
+                            <div class="img">
+                                <a class="test-popup-link" href="./img/portfolio/p6.jpg"><img src="./img/portfolio/p6.jpg" alt="portfolio-6"></a>
+                            </div>
+                            <div class="title py-4">
+                                <h4 class="text-uppercase">Together sign</h4>
+                                <span class="text-secondary">Following, Portfolio</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item following">
+                        <div class="our-project">
+                            <div class="img">
+                                <a class="test-popup-link" href="./img/portfolio/p7.jpg"><img src="./img/portfolio/p7.jpg" alt="portfolio-7"></a>
+                            </div>
+                            <div class="title py-4">
+                                <h4 class="text-uppercase">Green Heaven</h4>
+                                <span class="text-secondary">Following, Portfolio</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item following">
+                        <div class="our-project">
+                            <div class="img">
+                                <a class="test-popup-link" href="./img/portfolio/p8.jpg"><img src="./img/portfolio/p8.jpg" alt="portfolio-8"></a>
+                            </div>
+                            <div class="title py-4">
+                                <h4 class="text-uppercase">Fly Male</h4>
+                                <span class="text-secondary">Following, Portfolio</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item upcoming">
+                        <div class="our-project">
+                            <div class="img">
+                                <a class="test-popup-link" href="./img/portfolio/p9.jpg"><img src="./img/portfolio/p9.jpg" alt="portfolio-9"></a>
+                            </div>
+                            <div class="title py-4">
+                                <h4 class="text-uppercase">Camera Lens</h4>
+                                <span class="text-secondary">Upcoming, Portfolio</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
         <!-- End Project Area -->
 
+        <!-- About Client Area -->
+        <section class="about-area">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <div class="about-title">
+                            <h1 class="text-uppercase title-h1">
+                                What Clients Say about me
+                            </h1>
+                            <p class="para">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo maxime consequatur ipsa tenetur inventore assumenda laborum laboriosam delectus aliquam voluptatum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container carousel py-lg-5">
+                <div class="owl-carousel owl-theme">
+                    <div class="client row">
+                        <div class="col-lg-4 col-md-12 client-img">
+                            <img src="./img/testimonials/t1.jpg" alt="img1" class="img-fluid">
+                        </div>
+                        <div class="col-lg-8 col-md-12 about-client">
+                            <h4 class="text-uppercase">John Martin</h4>
+                            <p class="para">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est cumque numquam praesentium aut, voluptatibus autem!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="client row">
+                        <div class="col-lg-4 col-md-12 client-img">
+                            <img src="./img/testimonials/t2.jpg" alt="img2" class="img-fluid">
+                        </div>
+                        <div class="col-lg-8 col-md-12 about-client">
+                            <h4 class="text-uppercase">Mark Hill</h4>
+                            <p class="para">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est cumque numquam praesentium aut, voluptatibus autem!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="client row">
+                        <div class="col-lg-4 col-md-12 client-img">
+                            <img src="./img/testimonials/t1.jpg" alt="img3" class="img-fluid">
+                        </div>
+                        <div class="col-lg-8 col-md-12 about-client">
+                            <h4 class="text-uppercase">Sanjay Sharma</h4>
+                            <p class="para">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est cumque numquam praesentium aut, voluptatibus autem!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="client row">
+                        <div class="col-lg-4 col-md-12 client-img">
+                            <img src="./img/testimonials/t2.jpg" alt="img4" class="img-fluid">
+                        </div>
+                        <div class="col-lg-8 col-md-12 about-client">
+                            <h4 class="text-uppercase">Toni Morrison</h4>
+                            <p class="para">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est cumque numquam praesentium aut, voluptatibus autem!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="client row">
+                        <div class="col-lg-4 col-md-12 client-img">
+                            <img src="./img/testimonials/t1.jpg" alt="img5" class="img-fluid">
+                        </div>
+                        <div class="col-lg-8 col-md-12 about-client">
+                            <h4 class="text-uppercase">George Bernard</h4>
+                            <p class="para">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est cumque numquam praesentium aut, voluptatibus autem!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="client row">
+                        <div class="col-lg-4 col-md-12 client-img">
+                            <img src="./img/testimonials/t2.jpg" alt="img6" class="img-fluid">
+                        </div>
+                        <div class="col-lg-8 col-md-12 about-client">
+                            <h4 class="text-uppercase">Ace Darren</h4>
+                            <p class="para">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est cumque numquam praesentium aut, voluptatibus autem!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Client Area -->
+
+        <!-- Subscribe Area -->
+        <section class="subscribe-us-area">
+            <div class="container subscribe">
+                <div class="row">
+                    <div class="col-lg-12 text-center subscribe-title">
+                        <h4 class="text-uppercase">
+                            Get Update From anywhere
+                        </h4>
+                        <p class="para">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, doloribus?
+                        </p>
+                    </div>
+                </div>
+                <div class="d-sm-flex justify-content-center">
+                    <form class="w-50">
+                        <div class="row d-flex flex-row flex-wrap">
+                            <div class="col input-textbox">
+                                <input class="form-control" id="txtemail" placeholder="Email">
+                            </div>
+                            <div class="col">
+                                <div class="btn-submit">
+                                    <button type="submit" class="btn btn-success float-right">Subscribe</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- End Subscribe Area -->
 
     </main>
     <!-- End Main Area  -->
+
+    <!-- Footer Area -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="flex-wrap">
+                <div class="site-logo text-center py-4">
+                    <a href="#"><img src="./img/logo.png" alt="logo"></a>
+                </div>
+                <div class="social text-center">
+                    <h5 class="text-uppercase">Follow me</h5>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <div class="copyrights text-center">
+                    <p class="para">
+                        Copyright &#169; 2020. All rights reserved! This website is made by 
+                        <a href="#"><span style="color: var(--primary-color);">Sodiq Olanrewaju Akanmu</span></a> 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- End Footer Area-->
 
 
     <!-- JQuery JS File -->
@@ -333,6 +544,15 @@
 
     <!-- Isotope JS Library -->
     <script src="./vendor/isotope/isotope.min.js"></script>
+
+    <!-- Magnific-Popup script File -->
+    <script src="./vendor/Magnific-Popup/dist/jquery.magnific-popup.min.js"></script>
+
+    <!-- Owl Carousel JS File -->
+    <script src="./vendor/Owl Carousel/JS/owl.carousel.min.js"></script>
+
+    <!-- Custom JS File -->
+    <script src="./js/main.js"></script>
 
 </body>
 </html>
