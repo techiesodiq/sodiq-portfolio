@@ -122,6 +122,10 @@
 	filter: brightness(0.15);
 }
 
+.service-bucket {
+	height: 100px;
+}
+
 .site-main .brand-area .experience-area {
 	padding-left: 1rem;
 }
